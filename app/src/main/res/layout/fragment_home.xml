@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="3sp"
+        android:text="Sign Up"
+        android:textAppearance="@style/sign_up" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="2sp"
+        android:text="Create an account to continue!"
+        android:textAppearance="@style/create_an_a" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2sp"
+            android:text="Choose Subject(Optional)"
+            android:textAppearance="@style/create_an_a" />
+
+        <EditText
+            android:id="@+id/Subject_txtbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_area"
+            android:hint="Optional"
+            android:inputType="textAutoComplete"
+            android:paddingStart="10dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2sp"
+            android:text="Prelim"
+            android:textAppearance="@style/create_an_a" />
+
+        <EditText
+            android:id="@+id/prelim_txtbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_area"
+            android:hint="Prelim Grades"
+            android:inputType="numberDecimal"
+            android:paddingStart="10dp" />
+
+        <SeekBar
+            android:id="@+id/seekBar_prelim"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2sp"
+            android:text="Midterm"
+            android:textAppearance="@style/create_an_a" />
+
+        <EditText
+            android:id="@+id/midterms_txtbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_area"
+            android:hint="Midterm Grades"
+            android:inputType="numberDecimal"
+            android:paddingStart="10dp" />
+
+        <SeekBar
+            android:id="@+id/seekBar_midterm"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2sp"
+            android:text="Pre-Finals"
+            android:textAppearance="@style/create_an_a" />
+
+        <EditText
+            android:id="@+id/prefinals_txtbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_area"
+            android:hint="Pre-Finals Grades"
+            android:inputType="numberDecimal"
+            android:paddingStart="10dp" />
+
+        <SeekBar
+            android:id="@+id/seekBar_prefinals"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2sp"
+            android:text="Finals"
+            android:textAppearance="@style/create_an_a" />
+
+        <EditText
+            android:id="@+id/finals_txtbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_area"
+            android:hint="Finals Grades"
+            android:inputType="numberDecimal"
+            android:paddingStart="10dp" />
+
+        <SeekBar
+            android:id="@+id/seekBar_finals"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="20" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/quick_btn"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:text="QUICK" />
+
+        <Button
+            android:id="@+id/calc_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:text="Calculate" />
+    </LinearLayout>
+
+
+</LinearLayout>
